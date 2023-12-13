@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: Roboto;
+    margin: 0;
+    padding: 10px;
+}
+
+.logo_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo_wrapper > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    background: #fff;
+    padding: 15px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transition: 0.3s;
+}
+
+.logo_wrapper > a:hover {
+    background: #eee;
+    transition: 0.3s;
+}
+
+.logo_wrapper > a:visited {
+    color: #333;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    position: relative;
+}
+
+nav > ol {
+    display: block;
+    margin-bottom: 80px;
+}
+
+nav > ol > ul {
+    list-style: "\231B";
+}
+
+nav > ol > li > a {
+    text-decoration: none;
+}
+
+h3 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+a:active {
+    color: burlywood;
+}
+
+a:visited {
+    color: brown;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header > div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 ~ p {
+    color: #333;
+    padding: 5px;
+}
+
+
+.form > p {
+    margin: 7px;
+    padding: 0px;
+}
+
+.form > p > input {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.form > p > textarea {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.form > p > select {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.form > fieldset {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.form > button {
+    border-radius: 20px;
+    background-color: lightgray;
+    border: 1px solid gray;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.form > p > input:focus {
+    background-color: lightblue;
+    outline: none;
+}
+
+.form > p > textarea:focus {
+    background-color: lightblue;
+    outline: none;
+}
+
+.form > p > select:focus {
+    background-color: lightblue;
+    outline: none;
+}
+
+.form > p > input::placeholder {
+    color: dimgrey;
+    padding-left: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.form > p > textarea::placeholder {
+    color: dimgrey;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

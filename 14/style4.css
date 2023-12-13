@@ -1,0 +1,25 @@
+body {
+    background: lightsalmon;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.back_line {
+    width: 400px;
+    height: 10px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.slider {
+    position: relative;
+    top: -7.5px;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #518CCF;
+}

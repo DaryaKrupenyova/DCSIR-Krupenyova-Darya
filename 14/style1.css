@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Roboto:ital,wght@1,300&display=swap');
+
+body {
+    font-family: Nunito Sans;
+    margin: 0;
+    padding: 10px;
+}
+
+footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    background: #3065A1;
+}
+
+.footer_content_wrapper {
+    padding: 3% 6%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    height: 300px;
+}
+
+.footer_content_wrapper > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_content_wrapper > div > h3 {
+    margin-top: 0;
+    position: relative;
+}
+
+.footer_content_wrapper > div > h3::after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    top: 110%;
+    left: 0;
+    background: #FFFB66;
+}
+
+.footer_content_wrapper > div > a {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.yt_icons {
+    display: flex;
+}
+
+.yt_ic {
+    width: 50px;
+    height: 50px;
+    background: #518CCF;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yt_ic > img {
+    width: 30px;
+    height: 30px;
+}
+
+.contacts_column > p {
+    width: 60%;
+    margin-top: 0;
+    position: relative;
+    left: 22px;
+}
+
+.contacts_column > p:nth-last-child(1)::before {
+    position: absolute;
+    top: 0;
+    left: -22px;
+    content: '✉️';
+}
+
+.contacts_column > p:nth-last-child(2)::before {
+    position: absolute;
+    top: 0;
+    left: -22px;
+    content: '📞';
+}
+
+.contacts_column > p:nth-last-child(3)::before {
+    position: absolute;
+    top: 0;
+    left: -22px;
+    content: '📍';
+}
+
+.copyright {
+    color: #fff;
+    margin: 0;
+    font-size: 0.9em;
+    padding: 5px;
+    text-align: center;
+    background: #1A5184;
+}

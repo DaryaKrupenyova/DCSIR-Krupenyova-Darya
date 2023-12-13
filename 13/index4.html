@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПР13 З4</title>
+    <style>
+        body {
+            height: 1500px;
+        }
+        .content {
+            margin-top: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content" id="dynamicContent">
+        <p>Old Content</p>
+    </div>
+
+    <script>
+        function updateContent() {
+            var scrollPosition = window.scrollY;
+
+            var contentElement = document.getElementById('dynamicContent');
+
+            if (scrollPosition > 300) {
+                contentElement.innerHTML = '<p>New Content</p>';
+            }
+        }
+        window.addEventListener('scroll', updateContent);
+    </script>
+
+</body>
+</html>

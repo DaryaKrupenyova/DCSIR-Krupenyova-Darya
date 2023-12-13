@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Roboto:ital,wght@1,300&display=swap');
+
+body {
+    font-family: Nunito Sans;
+    margin: 0;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h3 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    background-color: #61AFF5;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 20px;   
+}
+
+nav > img {
+    z-index: 2;
+}
+
+.menu {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.menu_opened {
+    display: flex !important;
+    padding: 10px;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 30px;
+    z-index: 11;
+}
+
+.burger_lines {
+    width: 100%;
+    height: 2px;
+    background: #333;
+}
+
+.burger_lines_closed:nth-child(1) {
+    transform: translateY(14px) rotate(45deg);
+}
+
+.burger_lines_closed:nth-child(2) {
+    transform: scaleX(0);
+}
+
+.burger_lines_closed:nth-child(3) {
+    transform: translateY(-14px) rotate(-45deg);
+}
+
+.grid_section {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas:
+        "A A B C"
+        "D E B F"
+        "D G G G";
+    column-gap: 7px;
+    row-gap: 7px;
+    padding: 7px;
+    width: 100%;
+    height: 1000px;
+    background: #61AFF5;
+}
+
+.grid_elem {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    transition: 0.5s;
+}
+
+.grid_elem > img {
+    transition: 0.5s;
+    width: 120px;
+    height: 120px;
+}
+
+.grid_elem > p {
+    color: #333;
+    font-weight: 400;
+    text-align: center;
+}
+
+.grid_elem:nth-child(1) {
+    grid-area: A;
+}
+
+.grid_elem:nth-child(2) {
+    grid-area: B;
+}
+
+.grid_elem:nth-child(3) {
+    grid-area: C;
+}
+
+.grid_elem:nth-child(4) {
+    grid-area: D;
+}
+
+.grid_elem:nth-child(5) {
+    grid-area: E;
+}
+
+.grid_elem:nth-child(6) {
+    grid-area: F;
+}
+
+.grid_elem:nth-child(7) {
+    grid-area: G;
+}
+
+.grid_elem:hover {
+    background: #61AFF5;
+}
+
+.grid_elem:hover img {
+    transform: scale(1.1) translateY(-10px);
+}
+
+.form_section {
+    width: 100%;
+    height: 700px;
+    background: #61AFF5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 370px;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #000;
+}
+
+form > h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.inputs_wrapper {
+    display: grid;
+    grid-template-areas:
+        "A B"
+        "C D"
+        "E E";
+    grid-gap: 30px;
+    box-sizing: border-box;
+}
+
+.inputs_wrapper > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs_wrapper > div:nth-child(1) {
+    grid-area: A;
+}
+
+.inputs_wrapper > div:nth-child(2) {
+    grid-area: B;
+}
+
+.inputs_wrapper > div:nth-child(3) {
+    grid-area: C;
+}
+
+.inputs_wrapper > div:nth-child(4) {
+    grid-area: D;
+}
+
+.inputs_wrapper > div:nth-child(5) {
+    grid-area: E;
+}
+
+.inputs_wrapper > div > label {
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.inputs_wrapper > div > input {
+    transition: 0.5s;
+    color: #000;
+    width: 93%;
+    background: transparent;
+    outline: none;
+    padding: 2%;
+    font-size: 1em;
+    border: 1px solid dimgrey;
+    border-radius: 20px;
+}
+
+.inputs_wrapper > div > input:focus {
+    align-self: flex-end;
+    background: lightskyblue;
+    color: #000;
+}
+
+.inputs_wrapper > div > textarea {
+    transition: 0.5s;
+    color: #000;
+    background: transparent;
+    outline: none;
+    padding: 1%;
+    font-size: 1.3em;
+    border: 1px solid dimgrey;
+    border-radius: 20px;
+}
+
+.inputs_wrapper > div > textarea:focus {
+    background: lightskyblue;
+    color: #000;
+}
+
+.btn_wrapper > button {
+    margin-top: 1%;
+    background: lightskyblue;
+    padding: 1% 2%;
+    border: 0;
+    font-size: 0.9em;
+    color: #000;
+    border-radius: 20px;
+}
+
+
+footer {
+    color: #fff;
+    background: #3065A1;
+}
+
+.footer_content_wrapper {
+    padding: 3% 6%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    height: 300px;
+}
+
+.footer_content_wrapper > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_content_wrapper > div > h3 {
+    margin-top: 0;
+    position: relative;
+}
+
+.footer_content_wrapper > div > h3::after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    top: 110%;
+    left: 0;
+    background: #FFFB66;
+}
+
+.footer_content_wrapper > div > a {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.yt_icons {
+    display: flex;
+}
+
+.yt_ic {
+    width: 50px;
+    height: 50px;
+    background: #518CCF;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yt_ic > img {
+    width: 30px;
+    height: 30px;
+}
+
+.contacts_column > p {
+    width: 60%;
+    margin-top: 0;
+    position: relative;
+    left: 22px;
+}
+
+.contacts_column > p:nth-last-child(1)::before {
+    position: absolute;
+    top: 0;
+    left: -22px;
+    content: '✉️';
+}
+
+.contacts_column > p:nth-last-child(2)::before {
+    position: absolute;
+    top: 0;
+    left: -22px;
+    content: '📞';
+}
+
+.contacts_column > p:nth-last-child(3)::before {
+    position: absolute;
+    top: 0;
+    left: -22px;
+    content: '📍';
+}
+
+.copyright {
+    color: #fff;
+    margin: 0;
+    font-size: 0.9em;
+    padding: 5px;
+    text-align: center;
+    background: #1A5184;
+}

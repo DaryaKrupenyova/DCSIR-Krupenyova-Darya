@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Roboto:ital,wght@1,300&display=swap');
+
+body {
+    font-family: Nunito Sans;
+    margin: 0;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h3 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    background-color: #61AFF5;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 20px;   
+}
+
+nav > img {
+    z-index: 2;
+}
+
+.menu {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.menu_opened {
+    display: flex !important;
+    padding: 10px;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 30px;
+    z-index: 11;
+}
+
+.burger_lines {
+    width: 100%;
+    height: 2px;
+    background: #333;
+}
+
+.burger_lines_closed:nth-child(1) {
+    transform: translateY(14px) rotate(45deg);
+}
+
+.burger_lines_closed:nth-child(2) {
+    transform: scaleX(0);
+}
+
+.burger_lines_closed:nth-child(3) {
+    transform: translateY(-14px) rotate(-45deg);
+}
+
+footer {
+    color: #fff;
+    background: #3065A1;
+}
+
+.footer_content_wrapper {
+    padding: 3% 6%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    height: 300px;
+}
+
+.footer_content_wrapper > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_content_wrapper > div > h3 {
+    margin-top: 0;
+    position: relative;
+}
+
+.footer_content_wrapper > div > h3::after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    top: 110%;
+    left: 0;
+    background: #FFFB66;
+}
+
+.footer_content_wrapper > div > a {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.yt_icons {
+    display: flex;
+}
+
+.yt_ic {
+    width: 50px;
+    height: 50px;
+    background: #518CCF;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yt_ic > img {
+    width: 30px;
+    height: 30px;
+}
+
+.contacts_column > p {
+    width: 60%;
+    margin-top: 0;
+    position: relative;
+    left: 22px;
+}
+
+.contacts_column > p:nth-last-child(1)::before {
+    position: absolute;
+    top: 0;
+    left: -22px;
+    content: '✉️';
+}
+
+.contacts_column > p:nth-last-child(2)::before {
+    position: absolute;
+    top: 0;
+    left: -22px;
+    content: '📞';
+}
+
+.contacts_column > p:nth-last-child(3)::before {
+    position: absolute;
+    top: 0;
+    left: -22px;
+    content: '📍';
+}
+
+.copyright {
+    color: #fff;
+    margin: 0;
+    font-size: 0.9em;
+    padding: 5px;
+    text-align: center;
+    background: #1A5184;
+}
+
+.captcha_container{
+    width: 100%;
+    height: 1000px;
+    background: #61AFF5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.captcha_form {
+    position: relative;
+}
+
+.f_b {
+    position: relative;
+    width: 400px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: rgba(240, 240, 240, 0.2);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    padding: 1em 3em;
+    box-sizing: border-box;
+}
+
+.f_b > h3 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 1.9em;
+}
+
+.f_b > input {
+    background: rgba(255, 255, 255, 0.3);
+    border: 0;
+    border-radius: 20px;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+    color: #fff;
+}
+
+.f_b > input::placeholder {
+    color: #eee;
+    padding-left: 10px;
+    font-size: 1em;
+    margin: 0.5em 0px;
+}
+
+.f_b > input:focus {
+    outline: none;
+}
+
+.f_b > input > span {
+    color: #fff;
+    font-size: 1.0em;
+    margin-bottom: 0.3em;
+}
+
+.f_b > button {
+    width: 150px;
+    border-radius: 30px;
+    padding: 0.5em 1em;
+    border: 0;
+    font-size: 1.2em;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.4);
+    margin-bottom: 1.2em;
+}

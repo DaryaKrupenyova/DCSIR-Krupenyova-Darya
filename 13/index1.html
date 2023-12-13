@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ПР13 З1</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div id="centeredImageContainer">
+    <img id="centeredImage" src="/images/512px-HTML5_Badge.png">
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var centeredImageContainer = document.getElementById('centeredImageContainer');
+        var centeredImage = document.getElementById('centeredImage');
+        
+        centeredImageContainer.style.height = "300px";
+        centeredImageContainer.style.width = "300px";
+
+        centeredImage.style.height = "50px";
+        centeredImage.style.width = "50px";
+        centeredImage.style.position = "absolute";
+
+        centeredImage.style.top = (document.documentElement.clientHeight-centeredImage.offsetHeight)/2 + "px";
+        centeredImage.style.left = (document.documentElement.clientWidth-centeredImage.offsetWidth)/2 + "px";
+    });
+
+    
+    document.addEventListener('click', function (event) {
+        console.log(`Clicked at coordinates: (${event.clientX}, ${event.clientY})`);
+    });
+  </script>
+</body>
+</html>

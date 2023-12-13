@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа №11</title>
+    <link rel="icon" type="image/png" href="/icons/free-icon-font-document-3914193.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Корзина</h2>
+            <div>
+                <button class="button" onclick="sortAscending()">Сортировка по возрастанию</button>
+            </div>
+            <div>
+                <button class="button" onclick="sortDescending()">Сортировка по убыванию</button>
+            </div>
+            <div>
+                <label>Цена от</label>
+                <input type="number" id="minPriceInput">
+                <label>до</label>
+                <input type="number" id="maxPriceInput">
+                <button class="button" onclick="applyFilter()">Применить фильтр</button>
+                <button class="button" onclick="resetFilter()">Отменить фильтр</button>
+            </div>
+            <div id="cart"></div>
+            <div style="margin-top: 20px;" id="total">Цена: 0 руб</div>
+            <button class="button all_remove" onclick="clearCart()">Очистить корзину</button>
+        </section>     
+    </main>
+    <script src="script2.js"></script>
+</body>
+
+</html>

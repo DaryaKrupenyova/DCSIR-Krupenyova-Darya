@@ -1,0 +1,181 @@
+<!DOCTYPE html> <!-- Тип документа для браузера -->
+<html lang="ru">
+<!-- Самый главный тег -->
+
+<head>
+    <!-- Вся техническая информация о странице -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Для совместимости с IE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Для красивого отображения на мобильных устройствах-->
+    <title>Практическая работа №5</title> <!-- Заголовок страницы -->
+    <link rel="icon" type="image/png" href="/icons/free-icon-font-document-3914193.png"> <!-- Фавиконка -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <header id="back_to_main">
+        <nav>
+            <img src="images/512px-HTML5_Badge.png" alt="" height="50px">
+            <div class="burger" id="burger">
+                <div class="burger_lines"></div>
+                <div class="burger_lines"></div>
+                <div class="burger_lines"></div>
+            </div>    
+            <div class="menu" id="menu">
+                <a href="#title1">Введение</a>
+                <a href="#title2">Терминология</a>
+                <a href="#title3">Регистрация</a>
+                <a href="#title4">ЧаВо</a>
+                <a href="#title5">Анкета</a>
+                <a href="#title6">Материалы</a>
+                <a href="#title7">Контакты</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section>
+                <h3 id="title1">Введение в HTML</h3> 
+                <p>HTML - это язык разметки, который представляет простые правила оформления и компактный набор структурных и семантических элементов разметки (тегов). HTML позволяет описывать способ представления логических частей документа (заголовки, абзацы, списки и т.д.) и создавать веб-страницы разной сложности.</p>
+                <p>Изначально язык HTML (<a href="https://ru.wikipedia.org/wiki/HTML">HyperText Markup Language</a>) был задуман и создан как средство структурирования и форматирования документов без привязки к средствам отображения. В идеале, гипертекстовый документ должен одинаково выглядеть на различных устройствах (монитор ПЭВМ, экран ПДА или мобильного телефона, принтер, медиа-проектор и т.п.).</p>
+                <p>Разработкой спецификаций языка HTML и утверждением их в качестве официальных стандартов занимается Консорциум всемирной паутины (W3C). Помимо W3C, в развитии языка участвуют IT-компании и сообщество разработчиков.</p>
+                <p>HTML не является языком программирования, но веб-страницы могут содержать встроенные или загружаемые программы на скриптовых языках (в первую очередь Javascript) и программы-апплеты на языке Java.</p>
+            </section>
+            <section>
+                <h3 id="title2">Терминология HTML</h3> 
+                <dl>
+                    <dt>Элемент</dt>
+                    <dd> - контейнер, содержащий данные и позволяющий отформатировать их определенным образом. Любая Web-страница представляет собой набор элементов.</dd>
+                    <dt>Тег</dt>
+                    <dd> - начальный или конечный маркеры элемента. Теги определяют границы действия элементов и отделяют элементы друг от друга.</dd>
+                    <dd> - элемент языка разметки текста (HTML)</dd>
+                    <dt>Атрибут</dt>
+                    <dd> - параметр или свойство элемента.</dd>
+                    <dd> - дополнительные значения, которые настраивают элементы или регулируют их поведение различным способом, чтобы соответствовать критериям пользователей.</dd>
+                    <dd></dd>
+                    <dt>Скрипт</dt>
+                    <dd> - программа, включенная в состав Web-страницы для расширения ее возможностей.</dd>
+                    <dt>Сайт</dt>
+                    <dd> - набор Web-страниц, принадлежащих одному владельцу.</dd>
+                </dl>
+            </section>
+            <section>
+                <h3 id="title3">Регистрация на сайте</h3>
+                <form class="form" id="reg_form" action="" method="get">
+                    <p>
+                        <label for="input_surmane">Фамилия:</label>
+                        <input type="text" name="surmane" id="input_surmane" placeholder = "Иванов" required>
+                    </p>
+                    <p>
+                        <label for="input_mane">Имя:</label>
+                        <input type="text" name="name" id="input_mane" placeholder = "Иван"required>
+                    </p>
+                    <p>
+                        <label for="input_mail">E-mail:</label>
+                        <input type="email" name="mail" id="input_mail" placeholder = "ivan_ivanov@pochta.com" required>
+                    </p>
+                    <p>
+                        <label for="input_password">Пароль:</label>
+                        <input type="password" name="password" id="input_password" required>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="save" id="input_check_save" checked>
+                        <label for="input_check_save">Сохранить</label>
+                        <span class="save_status">(Данные сохранены)</span>
+                    </p>
+                    <p>
+                        <label for="input_photo">Фотография:</label>
+                        <input type="file" name="photo" id="input_photo">
+                    </p>
+                    <button type="submit">Отправить</button>
+                </form>
+            </section>
+            <section>
+                <h3 id="title4">Есть какие-то вопросы? Мы позвоним и поможем.</h3>
+                <form class="form" id = "call_form" action="" method="get">
+                    <p>
+                        <label for="telephone">Телефон:</label>
+                        <input type="tel" name="telephone" id="telephone" placeholder="+7(9xx)xxx-xx-xx" pattern="\+7\(9[0-9]{2}\)[0-9]{3}[0-9]{2}[0-9]{2}" required>
+                    </p>
+                    <p>
+                        <label for="input_call_date">Когда мы можем вам позвонить?</label>
+                        <input type="date" name="call_date" id="input_call_date" max="2023-10-18" min="2023-10-04" required>
+                        <input type="time" name="call_time" id="input_call_time" required>
+                    </p>
+                    <button type="submit">Отправить</button>
+                </form>
+            </section>
+            <section>
+                <h3 id="title5">Интересно узнать о вас больше</h3>
+                <form class="form" action="" method="get">
+                    <p>
+                        <label for="input_select_city">Ваш город</label>
+                        <select name="city" id="input_select_city">
+                            <option value="">-- Выберите город --</option>
+                            <option value="petersburg">Санкт-Петербург</option>
+                            <option value="moscow">Москва</option>
+                            <option value="samara">Самара</option>
+                            <option value="perm">Пермь</option>
+                            <option value="omsck">Омск</option>
+                            <option value="novosibirsk">Новосибирск</option>
+                            <option value="magadan">Магадан</option>
+                        </select>
+                    </p>
+                    <fieldset>
+                        <legend>Кто порекомендовал вам нас:</legend>
+                        <input type="radio" id="recomends_choise1" name="recomends" value="friends" checked>
+                        <label for="recomends_choise1">Друзья</label>
+                        <input type="radio" id="recomends_choise2" name="recomends" value="groupmates">
+                        <label for="recomends_choise1">Одногруппники</label>
+                        <input type="radio" id="recomends_choise3" name="recomends" value="family">
+                        <label for="recomends_choise1">Семья</label>
+                        <input type="radio" id="recomends_choise4" name="recomends" value="other">
+                        <label for="recomends_choise4">Другое</label>
+                    </fieldset>
+                    <p>
+                        <label style="display: block;" for="textarea_about">Расскажите о себе:</label>
+                        <textarea name="about" id="textarea_about" cols="50" rows="15" maxlength="300" minlength="0" placeholder="Хочу познать HTML"></textarea>
+                    </p>
+                    <button type="submit">Отправить</button>
+                </form>
+            </section>
+            <section class="gallery_wrapper" style="margin-top: 20px;">
+                <div class="gallery_image ht_high" style="grid-area: A; background-image: url('/images/2369ae6fa66b6830f2d9dbeaea74fe7e.jpg');"></div>
+                <div class="gallery_image ht_high" style="grid-area: B; background-image: url('/images/144e16083b7ee9e42471657fc01bd0c3.jpg');"></div>
+                <div class="gallery_image ht_low" style="grid-area: C; background-image: url('/images/8b1ddd4f6db575f0ca09ddf24114ff5a.jpg');"></div>
+                <div class="gallery_image ht_low" style="grid-area: D; background-image: url('/images/527931697942884dab1d42555a1154b4.jpg');"></div>
+                <div class="gallery_image ht_low" style="grid-area: E; background-image: url('/images/0d1749c4056426952a1045997f855648.jpg');"></div>
+                <div class="gallery_image ht_low" style="grid-area: F; background-image: url('/images/9225612bb758feeaadb9b624d3257994.jpg');"></div>
+                <div class="gallery_image ht_high" style="grid-area: G; background-image: url('/images/622cf1511fa1c1b278ee04ea856abb0f.jpg');"></div>
+                <div class="gallery_image ht_high" style="grid-area: H; background-image: url('/images/699e52aabde25c09fad38d1f7ed08eef.jpg');"></div>
+                <div class="gallery_image ht_high" style="grid-area: I; background-image: url('/images/cfbef5aca88cd32c370246e94a8070c8.jpg');"></div>
+            </section>
+        </article>
+        <aside>
+            <h3 id="title6" style="margin-top: 250px;">Дополнительные материалы по HTML</h3>
+            <a href="https://htmlbook.ru/samhtml">
+                <img style="z-index: 0; background-color: maroon; opacity: 0.7;" src="https://htmlbook.ru/themes/hb/img/logo.svg" alt="Логотип сайта с пособием" width="300px" height="300px">
+            </a>
+        </aside>
+        <aside>
+            <h3 id="title7">Мы на карте</h3>
+            <!--<iframe title="RTU MIREA on maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9001.683400788825!2d37.4697603827429!3d55.66428069076722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54dc1d23b51c3%3A0x74763ed59c81ccb6!2z0KDQotCjINCc0JjQoNCt0JA!5e0!3m2!1sru!2sru!4v1696355582966!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+        </aside>
+
+    </main>
+    <footer id="title8">
+        <address>
+            <h3>Контакты</h3>
+            <a style="display: block;" href="tel:+79779687317">Позвонить по номеру</a>
+            <a href="mailto:dasha1458@yandex.ru">Написать письмо</a>
+        </address>
+    </footer>
+
+    <script src="jquery-3.7.1.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

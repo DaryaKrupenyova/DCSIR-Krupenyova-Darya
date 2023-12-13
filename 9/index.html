@@ -1,0 +1,126 @@
+<!DOCTYPE html> <!-- Тип документа для браузера -->
+<html lang="ru">
+<!-- Самый главный тег -->
+
+<head>
+    <!-- Вся техническая информация о странице -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Для совместимости с IE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Для красивого отображения на мобильных устройствах-->
+    <title>Практическая работа №9</title> <!-- Заголовок страницы -->
+    <link rel="icon" type="image/png" href="/icons/free-icon-font-document-3914193.png"> <!-- Фавиконка -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <header id="back_to_main">
+        <nav>
+            <img src="images/512px-HTML5_Badge.png" alt="" height="50px">
+            <div class="burger" id="burger">
+                <div class="burger_lines"></div>
+                <div class="burger_lines"></div>
+                <div class="burger_lines"></div>
+            </div>    
+            <div class="menu" id="menu">
+                <a href="#">Введение</a>
+                <a href="#">Терминология</a>
+                <a href="#">Регистрация</a>
+                <a href="#">ЧаВо</a>
+                <a href="#">Анкета</a>
+                <a href="#">Материалы</a>
+                <a href="#">Контакты</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="like_section">
+            <div class="like" onclick="task3(this)">
+                <div id="first_like" class="like_wrapper">
+                    <svg height="25px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#999" stroke-width="2.4">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.048"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M2 9.1371C2 14 6.01943 16.5914 8.96173 18.9109C10 19.7294 11 20.5 12 20.5C13 20.5 14 19.7294 15.0383 18.9109C17.9806 16.5914 22 14 22 9.1371C22 4.27416 16.4998 0.825464 12 5.50063C7.50016 0.825464 2 4.27416 2 9.1371Z" fill="#00000000"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div id="second_like" class="like_wrapper like_hide">
+                    <svg height="25px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff" stroke-width="0.00024000000000000003">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)">
+                            <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" fill="#f22c54" strokewidth="0"></rect>
+                        </g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#fffCCCCCC" stroke-width="0.048"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M2 9.1371C2 14 6.01943 16.5914 8.96173 18.9109C10 19.7294 11 20.5 12 20.5C13 20.5 14 19.7294 15.0383 18.9109C17.9806 16.5914 22 14 22 9.1371C22 4.27416 16.4998 0.825464 12 5.50063C7.50016 0.825464 2 4.27416 2 9.1371Z" fill="#fff"></path>
+                        </g>
+                    </svg>
+                </div>
+                <span id="like_counter" class="like_counter">1</span>
+            </div>
+        </section>
+
+  
+    </main>
+    <footer id="contacts">
+        <div class="footer_content_wrapper">
+            <div>
+                <h3>About Us</h3>
+                <p style="margin-top: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur veritatis molestias dignissimos, laudantium maiores ratione labore, esse, facilis veniam eum est odio, corrupti necessitatibus error aspernatur quas alias. Corporis, dolorum.</p>
+                <div class="yt_icons">
+                    <a href="#">
+                        <div class="yt_ic">
+                            <img src="/icons/icons8-youtube-192.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="yt_ic">
+                            <img src="/icons/icons8-instagram-50.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="yt_ic">
+                            <img src="/icons/icons8-вконтакте-48.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="yt_ic">
+                            <img src="/icons/icons8-телеграмма-app-50.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#">About</a>
+                <a href="#">FAQ</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Help</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contacts</a>
+            </div>
+            <div>
+                <h3>Shop</h3>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Children</a>
+                <a href="#">Shoes</a>
+                <a href="#">Clothing</a>
+                <a href="#">Accessories</a>
+            </div>
+            <div class="contacts_column">
+                <h3>Contacts Us</h3>
+                <p>14 Tverskaya Street Moscow, 117513, Russia</p>
+                <p>+7 987 123-45-67<br>+7 987 123-45-67</p>
+                <p>example@mail.ru</p>
+            </div>
+        </div>
+        <p class="copyright">Copyright © 2023 Student MIREA. All Rights Reserved.</p>
+    </footer>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>

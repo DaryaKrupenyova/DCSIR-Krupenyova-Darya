@@ -1,0 +1,123 @@
+<!DOCTYPE html> <!-- Тип документа для браузера -->
+<html lang="ru">
+<!-- Самый главный тег -->
+
+<head>
+    <!-- Вся техническая информация о странице -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Для совместимости с IE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Для красивого отображения на мобильных устройствах-->
+    <title>Практическая работа №10</title> <!-- Заголовок страницы -->
+    <link rel="icon" type="image/png" href="/icons/free-icon-font-document-3914193.png"> <!-- Фавиконка -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <header id="back_to_main">
+        <nav>
+            <img src="images/512px-HTML5_Badge.png" alt="" height="50px">
+            <div class="burger" id="burger">
+                <div class="burger_lines"></div>
+                <div class="burger_lines"></div>
+                <div class="burger_lines"></div>
+            </div>    
+            <div class="menu" id="menu">
+                <a href="#">Введение</a>
+                <a href="#">Терминология</a>
+                <a href="#">Регистрация</a>
+                <a href="#">ЧаВо</a>
+                <a href="#">Анкета</a>
+                <a href="#">Материалы</a>
+                <a href="#">Контакты</a>
+            </div>
+        </nav>
+    </header>
+    <main style>
+        <section id="captchaContainer" class="captcha_container">
+            <form id="captchaForm" class="captcha_form">
+                <div class="f_b">
+                    <h3>Логин</h3>
+                    <input name="email_name" type="email" placeholder="Почта">
+                    <input name="pass" type="password" placeholder="Пароль">
+                    <label for="captchaInput">Введите: <span id="captchaText"></span></label>
+                    <input type="text" id="captchaInput" required>
+                    <button id="captchaButton" disabled>Проверить</button>
+                    <button type="submit" id="submitButton" disabled>Отправить</button>
+                </div>
+            </form>
+        </section>  
+        <section>
+            <p id="basket"></p>
+            <button id="addButton">Добавить в корзину</button>
+        </section>
+        <section>
+            <label>Введите текст:</label>
+            <input type="text" id="textInput">
+            <p id="result">Результат: </p>
+        </section>
+    </main>
+    <footer id="contacts">
+        <div class="footer_content_wrapper">
+            <div>
+                <h3>About Us</h3>
+                <p style="margin-top: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur veritatis molestias dignissimos, laudantium maiores ratione labore, esse, facilis veniam eum est odio, corrupti necessitatibus error aspernatur quas alias. Corporis, dolorum.</p>
+                <div class="yt_icons">
+                    <a href="#">
+                        <div class="yt_ic">
+                            <img src="/icons/icons8-youtube-192.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="yt_ic">
+                            <img src="/icons/icons8-instagram-50.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="yt_ic">
+                            <img src="/icons/icons8-вконтакте-48.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="yt_ic">
+                            <img src="/icons/icons8-телеграмма-app-50.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#">About</a>
+                <a href="#">FAQ</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Help</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contacts</a>
+            </div>
+            <div>
+                <h3>Shop</h3>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Children</a>
+                <a href="#">Shoes</a>
+                <a href="#">Clothing</a>
+                <a href="#">Accessories</a>
+            </div>
+            <div class="contacts_column">
+                <h3>Contacts Us</h3>
+                <p>14 Tverskaya Street Moscow, 117513, Russia</p>
+                <p>+7 987 123-45-67<br>+7 987 123-45-67</p>
+                <p>example@mail.ru</p>
+            </div>
+        </div>
+        <p class="copyright">Copyright © 2023 Student MIREA. All Rights Reserved.</p>
+    </footer>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    <script src="script3.js"></script>
+    <script src="script4.js"></script>
+</body>
+
+</html>
